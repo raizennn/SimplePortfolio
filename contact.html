@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Contacts</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      <link rel="stylesheet" href="contact.css">
+
+      <style>
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 80px; /* Add padding for the navbar */
+      height: calc(100vh - 80px); /* Subtract the height of the navbar */
+    }
+    
+    .contacts-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .contacts-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #eaeaea;
+      color: #000;
+    }
+    
+    .message {
+      width: 100%;
+      height: 150px;
+    }
+    
+    .submit-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .submit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 40px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .submit:hover {
+      background-color: #333;
+    }
+    
+    .submit-icon {
+      margin-left: 5px;
+    }
+    
+    /* Adjust the height of the navbar */
+    .w3-top {
+      height: 80px;
+    }
+  </style>
+      
+  </head>
+  
+  <body style="background-color: #000024">
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="aboutMe.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>RESUME/CV</p>
+  </a>
+  <a href="project.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>CONTACTS</p>
+  </a>
+</nav>
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="aboutMe.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="resume.html" class="w3-bar-item w3-button" class ="active" style="width:25% !important">RESUME/CV</a>
+    <a href="project.html" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACTS</a>
+  </div>
+</div>
+
+    <div class="contacts" id="contacts">
+      <div class="contacts--container">
+        <h1 class="main-title">Contacts</h1>
+        <div class="contacts-body">
+          <div class="contacts-form">
+            <form action="mailto:abes.geordel@gmail.com">
+              <div class="input-container">
+                <label for="Name" class="label"> Name </label>
+                <input placeholder="Name" class="form-input input" />
+              </div>
+              <div class="input-container">
+                <label for="Email" class="label"> Email </label>
+                <input placeholder="Email Address" class="form-input input" />
+              </div>
+              <div class="input-container">
+                <label for="Message" class="label"> Message </label>
+                <textarea placeholder="Type your message...." class="form-input message"></textarea>
+              </div>
+
+              <div class="submit-btn">
+                <button type="submit" class="submit">
+                  <p>Send</p>
+                  <div class="submit-icon">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </div>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="contacts-details">
+            <a href="mailto:abes.geordel@gmail.com" class="personal-details">
+              <div class="details">
+                <i class="fa-solid fa-at"></i>
+              </div>
+              <p style="color: #eaeaea">abes.geordel@gmail.com</p>
+            </a>
+
+            <div class="socialmedia-icons">
+              <a
+                href="https://twitter.com/geoooooordeeeel"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="https://github.com/Raizen5115"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/geordel-de-guzman-220687166/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/geordell15/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://medium.com"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-medium"></i>
+              </a>
+              <a
+                href="https://programing-school-blog.blogspot.com/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-blogger"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UC2xfVRyL_GC9OuVg7--JQMA"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://www.reddit.com/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-reddit"></i>
+              </a>
+              <a
+                href="https://codepen.io/programing-school"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-codepen"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="contactsNavy.svg" alt="contacts" class="contacts--img" />
+    </div>
+  </body>
+</html>
